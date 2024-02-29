@@ -71,7 +71,7 @@ void TIM2_IRQHandler(void)
 {
 	if(TIM_GetITStatus(TIM2,TIM_IT_Update) == SET)	//获取中断标志位并判断
 	{
-		CNT++;	
+		CNT++;
 		TIM_ClearITPendingBit(TIM2,TIM_IT_Update);
 	}
 }
